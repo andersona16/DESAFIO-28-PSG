@@ -27,6 +27,10 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 24px;
+        cursor: pointer;
+        &:hover {
+          color: #da2535;
+        }
       }
     }
     ul:nth-child(3) {
@@ -39,6 +43,11 @@
         line-height: 22px;
         font-weight: 600;
         color: #f9f9f9;
+        cursor: pointer;
+
+        &:hover {
+          color: #da2535;
+        }
       }
     }
   }
@@ -53,6 +62,10 @@
       color: #f9f9f9;
       line-height: 94px;
       margin-bottom: 16px;
+      transform: 0.2s;
+      &:hover {
+        color: #da2535;
+      }
     }
     > p {
       font-weight: 500;
@@ -98,7 +111,7 @@
 #two {
   background-image: url("../img/wallapaper2.png");
   background-size: cover;
-  height: 800px;
+  height: auto;
   background-repeat: no-repeat;
 
   display: flex;
@@ -153,6 +166,13 @@
 
 #three {
   > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    margin: 0 auto;
+
+    max-width: 1220px;
     > div:nth-child(1) {
       h1 {
         font-size: 32px;
@@ -160,7 +180,7 @@
         font-weight: 600;
         color: #0b1421;
 
-        margin-bottom: 24px;
+        margin-bottom: 56px;
 
         &::before {
           content: "";
@@ -177,6 +197,72 @@
     > div:nth-child(2) {
       display: flex;
       justify-content: center;
+      gap: 20px;
+
+      div {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        > div:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+
+          margin: 16px 0;
+          h1 {
+            font-size: 14px;
+            font-weight: 600;
+
+            color: #da2535;
+          }
+          > span {
+            color: rgba(11, 20, 33, 0.45);
+            font-size: 14px;
+          }
+          p {
+            color: #0b1421;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    > div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 76px 0;
+    }
+  }
+}
+
+#footer {
+  background: #0b1421;
+
+  > div:nth-child(1) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding: 40px 20px;
+
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      h1 {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 600;
+        color: #f9f9f9;
+      }
+      li {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+
+        color: #f9f9f9;
+      }
     }
   }
 }

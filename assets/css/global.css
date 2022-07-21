@@ -38,5 +38,8 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+button:hover {
+  background-color: #fd2535;
+}
 
 /*# sourceMappingURL=global.css.map */
